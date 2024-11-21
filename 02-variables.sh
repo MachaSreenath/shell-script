@@ -1,10 +1,10 @@
 #!/bin/bash
 
-Person1=Ram
-Person2=Rahim
+PERSON1=Ram
+PERSON2=Rahim
 
-echo "$Person1 : hi $Person2"
-echo "$Person2 : hi $Person1"
-echo "$Person1 : how are you"
-echo "$Person2 : i am good"
-echo "$Person1 : good"
+echo "$PERSON1 : hi $PERSON2"
+echo "$PERSON2 : hi $PERSON1"
+echo "$PERSON1 : how are you"
+echo "$PERSON2 : i am good"
+echo "$PERSON1 : good"
