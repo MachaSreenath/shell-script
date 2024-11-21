@@ -9,4 +9,4 @@ read -s username #the value entered above will automatically attached to usernam
 
 echo "enter your password"
 
-read password
+read -s password
