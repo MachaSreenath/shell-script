@@ -2,6 +2,7 @@
 # this is the program where we can pass the names in the time of execution 
 # sh <filename.sh> ram rahim suresh prakash
 # it takes ram and rahim if we give 1 and 2, like that we can give no. of names
+# this is known as "arguments"
 PERSON1=$1
 PERSON2=$2
 
