@@ -25,7 +25,7 @@ fi
 }
 
 if [ $id -ne 0 ]; then
-   echo "ERROR: Please run this script as root"
+   echo -e "$R ERROR: Please run this script as root"
    exit 1 # you can give other than 0
 else
    echo -e "\e[34m you are a root user $N"
