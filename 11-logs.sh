@@ -14,7 +14,7 @@ echo -e "\e[36m script name: $R $0"
 
 VALIDATE(){
 
-if [ $1 -eq 1 ]; 
+if [ $1 -ne 0 ]; 
 then
     echo -e "$R ERROR:$2....$N Failure"
     exit 1
