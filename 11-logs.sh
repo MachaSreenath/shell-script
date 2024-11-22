@@ -10,7 +10,7 @@ N="\e[0m"
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
-echo -e "\e[37m Script started executing at $(date) \e[38m"
+echo -e "\e[37m Script started executing at $(date)$N"
 
 
 VALIDATE(){
