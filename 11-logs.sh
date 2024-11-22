@@ -36,6 +36,6 @@ yum install mysql -y &>> $logfile
 
 VALIDATE $? "Installing mysql"
 
-yum install gittt -y &>> $logfile
+yum install git -y &>> $logfile
 
 VALIDATE $? "Installing git"
