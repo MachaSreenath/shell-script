@@ -10,7 +10,7 @@ N="\e[0m"
 
 logfile=/tmp/$0-$timestamp.log
 
-echo "script name: $0"
+echo -e "\e[36m script name: $R $0"
 
 VALIDATE(){
 
