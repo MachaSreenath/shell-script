@@ -1,5 +1,7 @@
 #!/bin/bash
 
+id=$(id -u)
+
 VALIDATE(){
 
 if [ $1 -ne 0 ]; 
@@ -11,8 +13,6 @@ else
 fi
 
 }
-
-id=$(id -u)
 
 if [ $id -ne 0 ]; then
    echo "ERROR: Please run this script as root"
