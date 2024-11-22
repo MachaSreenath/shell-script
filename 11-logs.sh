@@ -6,31 +6,32 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
-# Use only the script's basename for the logfile
-LOGFILE="/tmp/$(basename $0)-$TIMESTAMP.log"
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
 
 VALIDATE(){
-    if [ $1 -ne 0 ]; then
-        echo -e "ERROR:: $2 ... $R FAILED $N" | tee -a $LOGFILE
+    if [ $1 -ne 0 ]
+    then
+        echo -e "ERROR:: $2 ... $R FAILED $N"
         exit 1
     else
-        echo -e "$2 ... $G SUCCESS $N" | tee -a $LOGFILE
+        echo -e "$2 ... $G SUCCESS $N"
     fi
 }
 
-if [ $ID -ne 0 ]; then
-    echo -e "$R ERROR:: Please run this script with root access $N" | tee -a $LOGFILE
+if [ $ID -ne 0 ]
+then
+    echo -e "$R ERROR:: Please run this script with root access $N"
     exit 1 # you can give other than 0
 else
-    echo "You are root user" | tee -a $LOGFILE
-fi
+    echo "You are root user"
+fi # fi means reverse of if, indicating condition end
 
-# Install MySQL and validate
 yum install mysql -y &>> $LOGFILE
+
 VALIDATE $? "Installing MySQL"
 
-# Install Git and validate
 yum install git -y &>> $LOGFILE
+
 VALIDATE $? "Installing GIT"
