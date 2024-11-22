@@ -9,3 +9,5 @@ SUM=$(($NUMBER1+$NUMBER2+$NUMBER3))
 echo "Total:: $SUM"
 
 echo "how many args passed: $#"
+
+echo "all args passed: $@"
