@@ -1,6 +1,9 @@
 #!/bin/bash
 
 id=$(id -u)
+timestamp=$(date +%F-%H-%M-%S)
+
+logfile=/tmp/$0-$timestamp.log
 
 echo "script name: $0"
 
@@ -24,10 +27,10 @@ else
 fi #fi means reverse of if,indicating condition end
 
 
-yum install mysql -y
+yum install mysql -y &>> $logfile
 
 VALIDATE $? "Installing mysql"
 
-yum install git -y
+yum install git -y &>> $logfile
 
 VALIDATE $? "Installing git"
