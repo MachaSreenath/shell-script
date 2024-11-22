@@ -32,7 +32,7 @@ else
 fi #fi means reverse of if,indicating condition end
 
 
-yum install mysqlll -y &>> $logfile
+yum install mysql -y &>> $logfile
 
 VALIDATE $? "Installing mysql"
 
