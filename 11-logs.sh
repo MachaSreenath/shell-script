@@ -19,7 +19,7 @@ then
     echo -e "$R ERROR:$2....Failure $N"
     exit 1
 else
-    echo -e "$2.....$G Success"
+    echo -e "$2.....Success $G"
 fi
 
 }
