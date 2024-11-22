@@ -11,3 +11,7 @@ echo "Total:: $SUM"
 echo "how many args passed: $#"
 
 echo "all args passed: $@"
+
+echo "first arg passed: $1"
+
+echo "script name: $0"
