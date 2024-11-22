@@ -29,7 +29,7 @@ if [ $id -ne 0 ]; then
    echo -e "$R ERROR: Please run this script as root"
    exit 1 # you can give other than 0
 else
-   echo -e "\e[34m you are a root user $N"
+   echo -e "you are a \e[34mroot user $N"
 fi #fi means reverse of if,indicating condition end
 
 
