@@ -14,4 +14,4 @@ echo "all args passed: $@"
 
 echo "first arg passed: $1"
 
-echo "script name: $0"
+echo "script name on $(date) $0"
