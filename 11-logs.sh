@@ -1,14 +1,14 @@
 #!/bin/bash
 
 id=$(id -u)
-timestamp=$(date +%F-%H-%M)
+timestamp=$(date +%F-%H-%M-%S)
 
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
 
-logfile=/tmp/$0-$timestamp.log
+logfile="/tmp/$0-$timestamp.log"
 
 echo -e "\e[36m script name: $R $0"
 
