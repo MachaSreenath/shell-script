@@ -13,9 +13,9 @@ echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
 VALIDATE(){
     if [ $1 -ne 0 ]
     then 
-        echo "$2 .... is \e[31m Failed \e[0m"
+        echo -e "$2 .... is \e[31m Failed \e[0m"
     else
-        echo "$2 ..... is \e[32m Success \e[0m"
+        echo -e "$2 ..... is \e[32m Success \e[0m"
     fi
 }
 
