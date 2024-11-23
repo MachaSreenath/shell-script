@@ -11,4 +11,4 @@ else
     echo -e "\e[33m You are root user \e[0m"
 fi # fi means reverse of if, indicating condition end
 
-echo "All the arguments passed: $@"
+echo "All arguments passed: $@"
