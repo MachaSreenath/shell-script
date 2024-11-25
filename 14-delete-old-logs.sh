@@ -16,7 +16,6 @@ FILES_TO_DELETE=$(find $SOURCE_DIR -type f -mtime +10 -name "*.log")
 
 while IFS= read -r line #IFS stands for Internal Field Separator
 do
-    echo -e "$R Deleting files:$N $line"
+    echo "Deleting files: $line"
     rm -rf $line 
-    echo -e "$Y....files deleted $N"
 done <<< $FILES_TO_DELETE
