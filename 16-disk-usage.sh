@@ -16,6 +16,8 @@ done <<< "$DISK_USAGE"
 
 echo -e "Message: $message"
 
+echo "$message" | mail -s "High Disk Usage" sreenathshree9@gmail.com
+
 
 
 #+= is used not to overright the previous message, it will append the new message.
