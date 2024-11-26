@@ -16,8 +16,7 @@ done <<< "$DISK_USAGE"
 
 echo -e "Message: $message"
 
-echo "$message" | mail -s "High Disk Usage" sreenathshree9@gmail.com
-
+echo "$message" | mail -s "High Disk Usage" sreenathshree9@gmail.com #tis is the email id to whom we have to sent.
 
 
 #+= is used not to overright the previous message, it will append the new message.
