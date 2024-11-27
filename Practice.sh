@@ -20,5 +20,3 @@ else
     wordcount=$(wc -w < "$file_name")
     echo "...and this file contains the words inside it is: $wordcount"
 fi
-
-echo "file name is $0 "
