@@ -15,7 +15,6 @@ read file_name
 if [ ! -f $file_name ] 
 then
     echo "the file $file_name is not found"
-    exit 1
 else
     echo "the file $file_name is found"
     wordcount=$(wc -w < "$file_name")
