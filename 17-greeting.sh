@@ -2,7 +2,7 @@
 
 NAME=""
 WISHES="Good Morning"
-TEA="tekjek"
+EXTRA=""
 
 USAGE(){
     echo "USGAE:: $(basename $0) -n <name> -w <wishes>"
@@ -16,7 +16,7 @@ while getopts ":n:w:t:h" opt; do
     case $opt in
         n) NAME="$OPTARG";;
         w) WISHES="$OPTARG";;
-        t) TEA="$OPTARG";;
+        t) EXTRA="$OPTARG";;
         \?) echo "invalid options: -"$OPTARG"" >&2; USAGE; exit;;
         :) USAGE; exit;;
         h) USAGE; exit;;
@@ -31,4 +31,4 @@ if [ -z "$NAME" ]; then # now wishes is optional
     exit 1
 fi
 
-echo "Hello $NAME. $WISHES. I have been learning Shell Script.$TEA"
+echo "Hello $NAME. $WISHES. I have been learning Shell Script.$EXTRA"
