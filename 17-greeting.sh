@@ -19,7 +19,7 @@ while getopts ":n:w:h:t" opt; do
         \?) echo "invalid options: -"$OPTARG"" >&2; USAGE; exit;;
         :) USAGE; exit;;
         h) USAGE; exit;;
-        t) echo "This is a test"; exit;;
+        t) TEA="$OPTARG;;"
     esac
 done
 
