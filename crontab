@@ -1,0 +1,10 @@
+### to execute our shell script like a local command in linux terminal (ex: labauto)
+
+==> First we make a script ready 
+==> We have to copy our shell script file to /usr/local/bin
+==> Here, we have to add our custom_name to the path of the script file 
+            /usr/local/bin/<custom_name>
+==> Then we have to give the permission to execute the script file with our custom name
+            sudo chmod +x /usr/local/bin/<custom_name>
+==> Now we can execute our script like a local command in linux terminal by entering 
+    <custom_name>
