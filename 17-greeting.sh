@@ -2,7 +2,7 @@
 
 NAME=""
 WISHES="Good Morning"
-EXTRA=""
+EXTRA="Have a nice day"
 
 USAGE(){
     echo "USGAE:: $(basename $0) -n <name> -w <wishes>"
@@ -31,4 +31,4 @@ if [ -z "$NAME" ]; then # now wishes is optional
     exit 1
 fi
 
-echo "Hello $NAME. $WISHES. I have been learning Shell Script.$EXTRA"
+echo -e "Hello $NAME. $WISHES. I have been learning Shell Script.\e[32m $EXTRA"
