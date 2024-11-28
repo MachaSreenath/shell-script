@@ -2,6 +2,7 @@
 
 NAME=""
 WISHES="Good Morning"
+TEA=""
 
 USAGE(){
     echo "USGAE:: $(basename $0) -n <name> -w <wishes>"
